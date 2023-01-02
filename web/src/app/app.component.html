@@ -1,11 +1,17 @@
 <nav *ngIf="mostrarMenu">
   <div class="nav-wrapper">
-    <a href="#!" class="brand-logo center">Logo</a>
+    <a href="#!" class="right brand-logo">Logo</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul class="left hide-on-med-and-down">
       <li routerLinkActive="active"><a routerLink="/">Home</a></li>
       <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
+      <li routerLinkActive="active"><a routerLink="/payments">Pagamentos</a></li>
+      <li routerLinkActive="active"><a routerLink="/admin">Administrador</a></li>
     </ul>
   </div>
 </nav>
 
-<router-outlet></router-outlet>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+

@@ -8,12 +8,16 @@ import { AuthService } from './login/auth.service';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { AuthGuard } from './guards/auth.guard';
+import { PaymentsComponent } from './payments/payments.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    PaymentsComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

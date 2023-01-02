@@ -1,0 +1,22 @@
+
+<div class="container">
+  <form action="#" method="post">
+    <div class="file-field input-field">
+      <div class="btn">
+        <span>File</span>
+        <input
+          type="file"
+          name="image_uploads"
+          accept=".pdf"
+          (change)="onFileSelected($event)">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+    <div>
+      <a class="waves-effect waves-light btn-small"><i class="material-icons left">clear</i>Limpar</a>
+      <a (click)="submitFile()" class="waves-effect waves-light btn-small"><i class="material-icons left">cloud</i>Enviar</a>
+    </div>
+  </form>
+</div>
